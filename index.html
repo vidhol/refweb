@@ -1,181 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+<html>
+<head>
+  <script src="script.js"></script>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        
-    </head>
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
+<style type="text/css">
+#example { width: 100%; }
+#element {
+border:0;
+float: left;
+margin: 30px 30px 30px 30px;
+}
+#images {
+border:0;
+display: flex;
+flex-wrap: wrap;
+}
+</style>
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Vidar</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end developer & <span class="section__subtitle--intro--span">electronics engineer</span></p>
-            <img src="img/grafitti-1.jpg" alt="a picture of grafitti" class="intro__img">
-        </section>
-
-        <!-- My services-->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Web Design and Development</h3>
-                    <p>
-                    </p>
-                </div> <!-- / service -->
-
-                <div class="service">
-                    <h3>Electronics Design</h3>
-                    <p>
-                    </p>
-                </div> <!-- / service -->
-
-                <div class="service">
-                    <h3>Mechanical CAD</h3>
-                    <p>
-                    </p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
-
-            <a href="#work" class="btn">My Work</a>
-        </section>
-
-        <!-- About Me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Projects</h2>
-            <p class="section__subtitle section__subtitle--about">R&D projects I have worked on</p>
-
-            <div class="about-me__body">
-                <p></p>
-                <p></p>
-            </div>
-
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <div class="img-container">
-                    <img src="img/sounding rocket.jpg" alt="Sounding Rocket" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Sounding Rocket</div>
-                </div>
-
-                <!-- Portfolio item 02 -->
-                <div class="img-container">
-                    <img src="img/abb.jpg" alt="Robotic Arm" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Robotic Arm</div>
-                </div>
-
-                <!-- Portfolio item 03 -->
-                <div class="img-container">
-                    <img src="img/oil well tool.jpg" alt="Robotic tool for oil wells" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Robotic Tool For Oil Well</div>
-                </div>
-
-                <!-- Portfolio item 04 -->
-                <div class="img-container">
-                    <img src="img/subsea rov.jpg" alt="ROV system" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">ROV Systems</div>
-                </div>
-
-                <!-- Portfolio item 05 -->
-                <div class="img-container">
-                    <img src="img/motor.jpg" alt="Electric motors and drive systems" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Electric Motors And Drive Systems</div>
-                </div>
-            </div>
-
-            <img src="img/grafitti-1.jpg" alt="" class="about-me__img">
-        </section>
-
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-
-            <div class="portfolio">        
-                    <!-- Portfolio item 01 -->
-                <div class="img-container">
-                    <img src="img/rx-2.jpg" alt="Mechanical CAD" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Mechanical CAD</div>
-                </div>
-
-                <!-- Portfolio item 02 -->
-                <div class="img-container">
-                    <img src="img/PCBdesign3.jpg" alt="Electrical CAD" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Electrical CAD</div>
-                </div>
-
-                <!-- Portfolio item 03 -->
-                <div class="img-container">
-                    <img src="img/Motorkontroller1.jpg" alt="Variable frequency motor driver" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Variable Frequency Motor Driver</div>
-                </div>
-
-                <!-- Portfolio item 04-->
-                <div class="img-container">
-                    <img src="img/EmbeddedAI2.jpg" alt="AI" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">AI</div>
-                </div>
-
-                <!-- Portfolio item 05 -->
-                <div class="img-container">
-                    <img src="img/web.JPG" alt="Web Design" class="portfolio__img" oncontextmenu="return false;">
-                    <div class="centered-text">Web Design</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <ul class="social-list">
-                <!-- 
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                -->
-            </ul>
-        
-        </footer>
-
-        <script src="js/index.js"></script>
-        
-    </body>
+</head>
+<body>
+  <div id="images"></div>
+</body>
 </html>
